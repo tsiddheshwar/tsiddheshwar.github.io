@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ResumeLoaderService } from './resume-loader.service';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +7,8 @@ import { ResumeLoaderService } from './resume-loader.service';
 })
 export class AppComponent {
   title = 'tsiddheshwar.github.io';
-  constructor(resumeLoaderService:ResumeLoaderService){
-    console.log(resumeLoaderService.resume);
+  constructor(){
+    console.log('app comp...........');
     
   }
 }

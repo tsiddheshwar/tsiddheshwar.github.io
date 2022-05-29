@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ResumeComponentsModule } from './resume-components/resume-components.module';
+import { LandingPagesModule } from './landing-pages/landing-pages.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ResumeComponentsModule,
+    LandingPagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
