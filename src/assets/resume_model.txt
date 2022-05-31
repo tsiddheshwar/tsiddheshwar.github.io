@@ -199,7 +199,7 @@ trainings[8]
 personal_profile
   personal_skills[] s=teamwork,adaptable,analytical
   hobbies/interests[] s= listening music,reading books, playing video games
-  languages[]
+  languages
     English s= RWS
     Hindi s= RWS
     Marathi s= RWS
