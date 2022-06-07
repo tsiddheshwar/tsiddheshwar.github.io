@@ -277,13 +277,11 @@
             "reading books",
             "playing video games"
         ],
-        "languages": [
-            {
-                "English": "RWS",
-                "Hindi": "RWS",
-                "Marathi": "RWS"
-            }
-        ]
+        "languages": {
+            "English": "RWS",
+            "Hindi": "RWS",
+            "Marathi": "RWS"
+        }
     },
     "publications/awards": [
         {
