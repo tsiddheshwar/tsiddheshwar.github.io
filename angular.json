@@ -31,7 +31,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/styles.scss",
+              "src/assets/css/style.scss",
               "src/assets/css/_variables.scss",
               "src/assets/css/_mixins.scss"
             ],
@@ -101,7 +101,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/styles.scss",
+              "src/assets/css/style.scss",
               "src/assets/css/_variables.scss",
               "src/assets/css/_mixins.scss"
             ],
