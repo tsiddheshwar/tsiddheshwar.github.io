@@ -7,12 +7,14 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponentsModule } from './resume-components/resume-components.module';
 import { LandingPagesModule } from './landing-pages/landing-pages.module';
+import { UnderConstructionPopupComponent } from './under-construction-popup/under-construction-popup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    UnderConstructionPopupComponent
   ],
   imports: [
     BrowserModule,
