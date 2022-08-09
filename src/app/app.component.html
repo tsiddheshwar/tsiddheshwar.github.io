@@ -1,13 +1,11 @@
 <app-nav-bar></app-nav-bar>
-<router-outlet></router-outlet>
-<div>
-    <app-consolidated-resume></app-consolidated-resume>
-</div>
-<div>
-    <app-landing-viewer></app-landing-viewer>
+<div class="main-container">
+    <router-outlet></router-outlet>
+    <!-- <app-consolidated-resume></app-consolidated-resume>
+    <app-landing-viewer></app-landing-viewer> -->
     <h1>&Dstrok;&#272;&#x0110;</h1>
+    <div id="underconstrution">
+        <app-under-construction-popup></app-under-construction-popup>
+    </div>
+    <app-footer></app-footer>
 </div>
-<div id="underconstrution">
-    <app-under-construction-popup></app-under-construction-popup>
-</div>
-<app-footer></app-footer>
