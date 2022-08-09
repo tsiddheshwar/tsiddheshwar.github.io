@@ -1,6 +1,7 @@
 <nav id="navbar">
-  <ul>
-    <li>
+  <ul class="navbar-list">
+    <li class="navbar-item">
+      <a class="navbar-brand" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 -55 160 160">
           <defs>
             <style>
@@ -21,22 +22,10 @@
             <text id="ST" class="cls-1" y="100" x="5">S<tspan class="cls-2">T</tspan></text>
           </g>
         </svg>
+      </a>
     </li>
-    <li>
-      Skills
-    </li>
-    <li>
-      Tools
-    </li>
-    <li>
-      Works done
-    </li>
-    <li>
-      Contact
-    </li>
-    <li>
-      Landing pages
+    <li class="navbar-item" *ngFor="let navbarItem of navbarItems" (click)="clickNav(navbarItem)">
+      <span id={{navbarItem}} style="cursor:pointer">{{navbarItem}}</span>
     </li>
   </ul>
 </nav>
-<hr>
