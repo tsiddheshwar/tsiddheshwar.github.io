@@ -7,7 +7,16 @@
 }
 
 nav {
- 
+    height: $height;
+    display: inline;
+}
+ul li {
+    padding: 5px;
+    display: inline;
+}
+a{
+    height: 10px;
+    width: 20px;
 }
 
 #underconstrution {
@@ -26,10 +35,12 @@ nav {
 tr,td,th{
    border: 1px solid;
    text-align: left;
+   vertical-align: top;
 }
 .p3text{
     color: rgb(56, 155, 255);
 }
 *{
-    fill: green;
+    background: rgba(0, 255, 0, 0.1);
+    
 }
