@@ -2,25 +2,42 @@
 @import './variables';
 @import './mixins';
 
-.footer {
-
+body{
+    height: auto;
+    width: auto;
+}
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    max-height: 2*$navbarHeight;
 }
 
-nav {
-    height: $height;
+
+.navbar-list .navbar-item {
+    padding-left: 1em;
     display: inline;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 17px;
 }
-ul li {
-    padding: 5px;
-    display: inline;
+.navbar-list .navbar-item:hover {
+    background: #ddd;
+    color: black;
 }
-a{
-    height: 10px;
-    width: 20px;
+
+.main-container{
+    position: absolute;
+    top: $navbarHeight;
+    width: 12*$width;
 }
 
 #underconstrution {
-    position: absolute;
+    position: fixed;
     top: 3*$height;
     left: 3*$width;
     background-color: $popupBG;
@@ -29,18 +46,29 @@ a{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
-.academics{
+
+.academics {
     width: 12*$width;
 }
-tr,td,th{
-   border: 1px solid;
-   text-align: left;
-   vertical-align: top;
+
+tr,
+td,
+th {
+    border: 1px solid;
+    text-align: left;
+    vertical-align: top;
 }
-.p3text{
+
+.p3text {
     color: rgb(56, 155, 255);
 }
-*{
-    background: rgba(0, 255, 0, 0.1);
-    
+
+.landing-viewer{
+    margin-top: 10px;
+}
+
+* {
+    background: rgba(0, 255, 0, 0.111);
+    border: 1px solid rgba(255, 0, 0, 0.181);
+    font-family: calibri;
 }
