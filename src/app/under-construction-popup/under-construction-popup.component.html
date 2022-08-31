@@ -1,4 +1,25 @@
-<div>
-    <h1>This site is under construction!!!</h1>
-    <button (click)="close()">close</button>
+<div class="modal fade" id="underconstruction">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">This site is under construction!!!</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <!-- <div class="modal-body">
+              Modal body..
+            </div> -->
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
 </div>
+<button id="underconstructionBtn" hidden type="button" class="btn btn-primary" data-toggle="modal"
+    data-target="#underconstruction"></button>
