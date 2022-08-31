@@ -1,31 +1,36 @@
-<nav id="navbar">
-  <ul class="navbar-list">
-    <li class="navbar-item">
-      <a class="navbar-brand" href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 -55 160 160">
-          <defs>
-            <style>
-              .cls-1 {
-                font-size: 150px;
-                fill: #007df1;
-                font-family: Calibri;
-                font-weight: 700;
-                font-style: italic;
-              }
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-link" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-15 -55 220 220">
+      <defs>
+        <style>
+          .cls-1 {
+            font-size: 150px;
+            fill: #007df1;
+            font-family: Calibri;
+            font-weight: 700;
+            font-style: italic;
+          }
 
-              .cls-2 {
-                fill: #fc843c;
-              }
-            </style>
-          </defs>
-          <g id="Artboard_1" data-name="Artboard 1">
-            <text id="ST" class="cls-1" y="100" x="5">S<tspan class="cls-2">T</tspan></text>
-          </g>
-        </svg>
-      </a>
-    </li>
-    <li class="navbar-item" *ngFor="let navbarItem of navbarItems" (click)="clickNav(navbarItem)">
-      <span id={{navbarItem}} style="cursor:pointer">{{navbarItem}}</span>
-    </li>
-  </ul>
+          .cls-2 {
+            fill: #fc843c;
+          }
+        </style>
+      </defs>
+      <g id="Artboard_1" data-name="Artboard 1">
+        <text id="ST" class="cls-1" y="100" x="5">S<tspan class="cls-2">T</tspan></text>
+      </g>
+    </svg>
+  </a>
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="navbar-item" *ngFor="let navbarItem of navbarItems" data-toggle="collapse"
+        data-target=".navbar-collapse.show" (click)="clickNav(navbarItem)">
+        <span id={{navbarItem}} class="nav-link" style="cursor:pointer">{{navbarItem}}</span>
+      </li>
+    </ul>
+  </div>
 </nav>
