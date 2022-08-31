@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-  navbarItems: any = ['Skills', 'Work done', 'Tools', 'Landing Pages', 'Contact'];
+  navbarItems: any = ['Skills', 'Work done', 'Tools', 'Landing Pages', 'Contact','Certificates'];
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -18,7 +18,8 @@ export class NavBarComponent implements OnInit {
       navbarItem == "Work done" ? this.router.navigate(['/', 'workdone']) :
         navbarItem == "Tools" ? this.router.navigate(['/', 'tools']) :
           navbarItem == "Landing Pages" ? this.router.navigate(['/', 'landingpages']) :
-            navbarItem == "Contact" ? this.router.navigate(['/', 'contact']) : '';
+            navbarItem == "Contact" ? this.router.navigate(['/', 'contact']) :
+              navbarItem == "Certificates" ? this.router.navigate(['/', 'certificates']) : '';
   }
 
 }

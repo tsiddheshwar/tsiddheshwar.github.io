@@ -10,10 +10,7 @@ export class UnderConstructionPopupComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  close(){
-    let popup = document.getElementById("underconstrution");
-    popup?.setAttribute("hidden","true");
+    let a = document.getElementById('underconstructionBtn');
+    a ? a.click() : '';
   }
 }
