@@ -1,5 +1,20 @@
 <div class="landing-viewer">
-    landing viewer
-    <button><a routerLink="/mgsfanpage" routerLinkActive="active">mgsFanPage</a></button>
-    <button><a routerLink="/sampleform" routerLinkActive="active">sampleForm</a></button>
+    <div class="offset-md-1">
+        <div class="btn-group">
+        <a class="btn btn-primary" routerLink="/landingpages/mgs" >mgsFanPage</a>
+        <a class="btn btn-primary" routerLink="/landingpages/form" >sampleForm</a>
+        <a class="btn btn-primary" routerLink="/landingpages" routerLinkActive="active">back</a>
+    </div>
+    </div>
+    
+    <div class="row">
+        <div class="offset-md-1 col-md-10">
+    <div class="landingviewer">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    </div>
+    
+    
+
 </div>
