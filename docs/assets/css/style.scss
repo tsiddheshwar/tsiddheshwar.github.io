@@ -7,9 +7,25 @@
     color: rgb(56, 155, 255);
 }
 
+.landingviewer{
+    border: 2px solid black;
+    height: 70vh;
+    width: 12 * $width;
+    overflow: scroll;
+    zoom: 80%;
+    margin: 10px 0 10px 0;
+}
+
+.q{
+    background-image: url("../mgs/mgs\ \(22\).jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+  height: 70vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
 .a {
-    background: rgba(0, 255, 0, 0.111);
-    border: 1px solid rgba(255, 0, 0, 0.181);
-    font-family: calibri;
+    box-sizing: border-box;
+    background: rgb(0 100 0/0.1) !important;
 }
