@@ -4,7 +4,7 @@ import { MgsFanpageComponent } from './mgs-fanpage/mgs-fanpage.component';
 import { LandingViewerComponent } from './landing-viewer/landing-viewer.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { SampleFormComponent } from './sample-form/sample-form.component';
-
+import { landingPagesRoutingModule } from './landing-pages-routing.module';
 
 
 @NgModule({
@@ -15,7 +15,8 @@ import { SampleFormComponent } from './sample-form/sample-form.component';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    landingPagesRoutingModule
   ],
   exports:[
     LandingViewerComponent
