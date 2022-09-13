@@ -25,7 +25,7 @@ career_objective s=Seeking for a role which helps in enhancing my professional s
 //------------------------------------------------
 technical_skills[0]
   type s=framework
-  icon s=
+  icon s=https://angular.io/assets/images/logos/angular/angular.svg
   name s=Angular
   version s=10
   proficiency n=4
@@ -34,7 +34,7 @@ technical_skills[0]
   primary b=true
 technical_skills[1]
   type s=programminglanguage
-  icon s=
+  icon s=https://static.npmjs.com/255a118f56f5346b97e56325a1217a16.svg
   name s=TypeScript
   version s=
   proficiency n=3
@@ -43,7 +43,7 @@ technical_skills[1]
   primary b=true
 technical_skills[2]
   type s=programminglanguage
-  icon s=
+  icon s=https://www.javascript.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/js-logo.png
   name s=JavaScript
   version s=ES6
   proficiency n=4
@@ -52,7 +52,7 @@ technical_skills[2]
   primary b=true
 technical_skills[3]
   type s=programminglanguage
-  icon s=
+  icon s=https://www.python.org/static/img/python-logo@2x.png
   name s=Python
   version s=3
   proficiency n=2
@@ -61,7 +61,7 @@ technical_skills[3]
   primary b=false
 technical_skills[4]
   type s=framework
-  icon s=
+  icon s=https://camo.githubusercontent.com/2512b49c89512f2ff3718f7257f48ed5c46a4e331abbd890b6c5e8c0e458434f/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67
   name s=Bootstrap
   version s=4
   proficiency n=3
@@ -97,7 +97,7 @@ technical_skills[7]
   primary b=true
 technical_skills[8]
   type s=webtechnology
-  icon s=
+  icon s=https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg
   name s=SCSS
   version s=
   proficiency n=2
@@ -106,7 +106,7 @@ technical_skills[8]
   primary b=true
 technical_skills[9]
   type s=webtechnology
-  icon s=
+  icon s=https://www.json.org/img/json160.gif
   name s=JSON
   version s=
   proficiency n=3
@@ -115,7 +115,7 @@ technical_skills[9]
   primary b=true
 technical_skills[10]
   type s=webtechnology
-  icon s=
+  icon s=https://upload.wikimedia.org/wikipedia/commons/9/9d/Xml_logo.svg
   name s=XML
   version s=
   proficiency n=3
@@ -142,7 +142,7 @@ technical_skills[11]
   primary b=true
 technical_skills[12]
   type s=database
-  icon s=
+  icon s=https://labs.mysql.com/common/logos/mysql-logo.svg?v2
   name s=MySQL
   version s=
   proficiency n=3
@@ -151,7 +151,7 @@ technical_skills[12]
   primary b=true
 technical_skills[13]
   type s=database
-  icon s=
+  icon s=https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress
   name s=MongoDB
   version s=
   proficiency n=3
@@ -160,7 +160,7 @@ technical_skills[13]
   primary b=true
 technical_skills[14]
   type s=versioncontrolltool
-  icon s=
+  icon s=https://git-scm.com/images/logos/logomark-orange@2x.png
   name s=Git
   version s=
   proficiency n=3
@@ -169,7 +169,7 @@ technical_skills[14]
   primary b=true
 technical_skills[15]
   type s=testing
-  icon s=
+  icon s=https://jasmine.github.io/images/jasmine-white-horizontal.svg
   name s=Jasmine
   version s=
   proficiency n=3
@@ -178,7 +178,7 @@ technical_skills[15]
   primary b=true
 technical_skills[16]
   type s=testing
-  icon s=
+  icon s=https://karma-runner.github.io/assets/img/banner.png
   name s=Karma
   version s=
   proficiency n=3
