@@ -1,318 +1,707 @@
 {
-    "name": "siddheshwar sunil tekale",
+    "name": "Siddheshwar Sunil Tekale",
     "dob": "1996-03-10T12:15:00.000Z",
     "mobile": 8484089662,
     "email": "tsiddheshwar@gmail.com",
     "address": {
-        "permanent": {
-            "pin": 413510,
-            "address": "at.post.Padoli,",
-            "taluka": "Kalamb",
-            "district": "Osmanabad",
-            "state": "Maharashtra",
-            "country": "India"
-        },
-        "current": {
-            "pin": 413510,
-            "address": "at.post.Padoli,",
-            "taluka": "Kalamb",
-            "district": "Osmanabad",
-            "state": "Maharashtra",
-            "country": "India"
-        }
+      "permanent": {
+        "pin": 413510,
+        "address": "at.post.Padoli,",
+        "taluka": "Kalamb",
+        "district": "Osmanabad",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      "current": {
+        "pin": 413510,
+        "address": "at.post.Padoli,",
+        "taluka": "Kalamb",
+        "district": "Osmanabad",
+        "state": "Maharashtra",
+        "country": "India"
+      }
     },
     "linkedin": "https://www.linkedin.com/in/tsiddheshwar",
     "portfolio": "https://tsiddheshwar.Github.io/",
     "Github": "https://Github.com/tsiddheshwar/",
-    "career_objective": "Seeking for a role which helps in gaining skills to solve challenging problems to add value to company and to grow a successful career",
+    "career_objective": "Seeking for a role which helps in enhancing my professional skills to solve challenging problems to add value to the client and the employer and to grow a successful career.",
     "technical_skills": [
-        {
-            "name": "HTML",
-            "proficiency": 5
-        },
-        {
-            "name": "CSS",
-            "proficiency": 3
-        },
-        {
-            "name": "Angular",
-            "proficiency": 4
-        },
-        {
-            "name": "Git",
-            "proficiency": 4
-        },
-        {
-            "name": "QUnits",
-            "proficiency": 3
-        },
-        {
-            "name": "Python",
-            "proficiency": 4
-        },
-        {
-            "name": "JavaScript",
-            "proficiency": 4
-        },
-        {
-            "name": "TypeScript",
-            "proficiency": 3
-        },
-        {
-            "name": "VSTS",
-            "proficiency": 2
-        },
-        {
-            "name": "twitter Bootstrap 4",
-            "proficiency": 3
-        },
-        {
-            "name": "MongoDB",
-            "proficiency": 2
-        },
-        {
-            "name": "basics of SQL",
-            "proficiency": 2
-        }
+      {
+        "type": "framework",
+        "icon": "",
+        "name": "Angular",
+        "version": "10",
+        "proficiency": 4,
+        "certificate": "",
+        "experience": "3",
+        "primary": true
+      },
+      {
+        "type": "programminglanguage",
+        "icon": "",
+        "name": "TypeScript",
+        "version": "",
+        "proficiency": 3,
+        "certificate": "",
+        "experience": "3",
+        "primary": true
+      },
+      {
+        "type": "programminglanguage",
+        "icon": "",
+        "name": "JavaScript",
+        "version": "ES6",
+        "proficiency": 4,
+        "certificate": "",
+        "experience": "3",
+        "primary": true
+      },
+      {
+        "type": "programminglanguage",
+        "icon": "",
+        "name": "Python",
+        "version": "3",
+        "proficiency": 2,
+        "certificate": "",
+        "experience": "1",
+        "primary": false
+      },
+      {
+        "type": "framework",
+        "icon": "",
+        "name": "Bootstrap",
+        "version": "4",
+        "proficiency": 3,
+        "certificate": "",
+        "experience": "1",
+        "primary": true
+      },
+      {
+        "type": "other",
+        "icon": "",
+        "name": "Machine Leraning",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": false
+      },
+      {
+        "type": "webtechnology",
+        "icon": "",
+        "name": "HTML",
+        "version": "5",
+        "proficiency": 4,
+        "certificate": "",
+        "experience": "3",
+        "primary": true
+      },
+      {
+        "type": "webtechnology",
+        "icon": "",
+        "name": "CSS",
+        "version": "3",
+        "proficiency": 4,
+        "certificate": "",
+        "experience": "3",
+        "primary": true
+      },
+      {
+        "type": "webtechnology",
+        "icon": "",
+        "name": "SCSS",
+        "version": "",
+        "proficiency": 2,
+        "certificate": "",
+        "experience": "1",
+        "primary": true
+      },
+      {
+        "type": "webtechnology",
+        "icon": "",
+        "name": "JSON",
+        "version": "",
+        "proficiency": 3,
+        "certificate": "",
+        "experience": "3",
+        "primary": true
+      },
+      {
+        "type": "webtechnology",
+        "icon": "",
+        "name": "XML",
+        "version": "",
+        "proficiency": 3,
+        "certificate": "",
+        "experience": "3",
+        "primary": true
+      },
+      {
+        "type": "webtechnology",
+        "icon": "",
+        "name": "JSX",
+        "version": "",
+        "proficiency": 2,
+        "certificate": "",
+        "experience": "1",
+        "primary": true
+      },
+      {
+        "type": "database",
+        "icon": "",
+        "name": "MySQL",
+        "version": "",
+        "proficiency": 3,
+        "certificate": "",
+        "experience": "1",
+        "primary": true
+      },
+      {
+        "type": "database",
+        "icon": "",
+        "name": "MongoDB",
+        "version": "",
+        "proficiency": 3,
+        "certificate": "",
+        "experience": "1",
+        "primary": true
+      },
+      {
+        "type": "versioncontrolltool",
+        "icon": "",
+        "name": "Git",
+        "version": "",
+        "proficiency": 3,
+        "certificate": "",
+        "experience": "3",
+        "primary": true
+      },
+      {
+        "type": "testing",
+        "icon": "",
+        "name": "Jasmine",
+        "version": "",
+        "proficiency": 3,
+        "certificate": "",
+        "experience": "3",
+        "primary": true
+      },
+      {
+        "type": "testing",
+        "icon": "",
+        "name": "Karma",
+        "version": "",
+        "proficiency": 3,
+        "certificate": "",
+        "experience": "3",
+        "primary": true
+      },
+      {
+        "type": "projectmanagementtool",
+        "icon": "",
+        "name": "Azure DevOps(VSTS)",
+        "version": "",
+        "proficiency": 2,
+        "certificate": "",
+        "experience": "2",
+        "primary": true
+      },
+      {
+        "type": "projectmanagementtool",
+        "icon": "",
+        "name": "GitHub",
+        "version": "",
+        "proficiency": 3,
+        "certificate": "",
+        "experience": "3",
+        "primary": true
+      },
+      {
+        "type": "IDE",
+        "icon": "",
+        "name": "VS code",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "IDE",
+        "icon": "",
+        "name": "STS-4",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "tool",
+        "icon": "",
+        "name": "MS-Office",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "tool",
+        "icon": "",
+        "name": "REST Client",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "Object Oriented Design",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "Data Structure",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "Agile Methodologies",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "Scrum",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "Unit Testing",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "Software Project Management",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "Software Development Life Cycle",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "Test Driven Development",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "Continous Integration",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "NoSQL",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "SQL",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "knowledge",
+        "icon": "",
+        "name": "Single Page Web Application",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": true
+      },
+      {
+        "type": "framework",
+        "icon": "",
+        "name": "React.js",
+        "version": "",
+        "proficiency": 2,
+        "certificate": "",
+        "experience": "1",
+        "primary": false
+      },
+      {
+        "type": "framework",
+        "icon": "",
+        "name": "Express.js",
+        "version": "",
+        "proficiency": 1,
+        "certificate": "",
+        "experience": "1",
+        "primary": false
+      },
+      {
+        "type": "framework",
+        "icon": "",
+        "name": "Node.js",
+        "version": "",
+        "proficiency": 1,
+        "certificate": "",
+        "experience": "1",
+        "primary": false
+      },
+      {
+        "type": "framework",
+        "icon": "",
+        "name": "Material UI",
+        "version": "",
+        "proficiency": 1,
+        "certificate": "",
+        "experience": "1",
+        "primary": false
+      },
+      {
+        "type": "webtechnology",
+        "icon": "",
+        "name": "SVG",
+        "version": "",
+        "proficiency": 2,
+        "certificate": "",
+        "experience": "1",
+        "primary": false
+      },
+      {
+        "type": "stack",
+        "icon": "",
+        "name": "MERN Full Stack",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": false
+      },
+      {
+        "type": "stack",
+        "icon": "",
+        "name": "MEAN Full Stack",
+        "version": "",
+        "proficiency": 0,
+        "certificate": "",
+        "experience": "",
+        "primary": false
+      }
     ],
     "projects": [
-        {
-            "name": "Toolbox_Horizen",
-            "description": "Toolbox Horizen is a web application developed for Boeing and used by itself and its clients for service, repair and maintain the commercial, private and combat aircrafts and also for preventing and resolving faults if any. Specifically designed to use by Service Engineers, Mechanic and Pilots.",
-            "company": "infosys",
-            "client": "boeing",
-            "technology": [
-                "HTML",
-                "CSS",
-                "Angular",
-                "xslt",
-                "qunit",
-                "vsts",
-                "agile",
-                "Git",
-                "JavaScript",
-                "TypeScript"
-            ],
-            "type": "regular",
-            "role": "senior systems engineer",
-            "year": "current",
-            "priority": 5
-        },
-        {
-            "name": "MyProtfolio",
-            "description": "Portfolio is my personal UI web page hosted on Github pages, build by using Angular and other UI technologies.",
-            "technology": [
-                "Angular",
-                "CSS",
-                "HTML",
-                "sCSS",
-                "JavaScript",
-                "TypeScript",
-                "qunit",
-                "Git"
-            ],
-            "type": "personal",
-            "role": "full stack developer",
-            "year": "2022",
-            "priority": 5
-        },
-        {
-            "name": "WanderLust",
-            "description": "WanderLust is web application build in MERN full stack, it is used by end user for booking flights and hotels for tours and travels.",
-            "company": "infosys",
-            "client": "ETA Infosys",
-            "technology": "MERN full stack",
-            "type": "training project",
-            "role": "full stack developer",
-            "year": "2019",
-            "priority": 4
-        },
-        {
-            "name": "ESD-Student-Management-System",
-            "description": "This software is developed for trainers for storing, managing and evaluating students data and perforamance in Employability Skill Development training.",
-            "company": "Zensar Technologies Ltd.",
-            "client": "Employability Skill Development, Zensar",
-            "technology": [
-                "C#.Net",
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "MongoDB"
-            ],
-            "type": "training project",
-            "role": "UI developer",
-            "year": "2017",
-            "priority": 4
-        },
-        {
-            "name": "Prediction of Chronic Kidney Disease by using Machine Learning Algorithm.",
-            "description": "Using Machine Learning algorithms to detect disease CKD by using medical test reports.",
-            "company": "",
-            "client": "",
-            "technology": [
-                "HTML5",
-                "CSS",
-                "Python",
-                "tkinter"
-            ],
-            "type": "academic project",
-            "role": "UI developer,Python Programmer",
-            "year": "2017",
-            "priority": 3
-        }
+      {
+        "name": "Toolbox_Horizen",
+        "description": "Toolbox Horizen is a web application developed for Boeing and used by itself and its clients for service, repair and maintain the commercial, private and combat aircrafts and also for preventing and resolving faults if any. Specifically designed to use by Service Engineers, Mechanic and Pilots.",
+        "company": "infosys",
+        "client": "boeing",
+        "technology": [
+          "Java",
+          "Sprint Boot 5",
+          "Angular",
+          "HTML",
+          "CSS",
+          "GIT",
+          "Ts",
+          "Js",
+          "JSON",
+          "XML",
+          "VSTS",
+          "Jasmine",
+          "Karma",
+          "Scrum",
+          "SVG"
+        ],
+        "type": "regular",
+        "role": "senior systems engineer",
+        "year": "current",
+        "priority": 5
+      },
+      {
+        "name": "Personal Protfolio on GitHub Pages",
+        "description": "Portfolio is my personal UI web page hosted on Github pages, build by using Angular and other UI technologies.",
+        "technology": [
+          "Angular",
+          "Bootstrap",
+          "HTML",
+          "CSS",
+          "GIT",
+          "Ts",
+          "Js",
+          "SCSS",
+          "XML",
+          "Jasmine",
+          "VSTS",
+          "GitHub"
+        ],
+        "type": "personal",
+        "role": "full stack developer",
+        "year": "2022",
+        "priority": 5
+      },
+      {
+        "name": "WanderLust",
+        "description": "WanderLust is web application build in MERN full stack, it is used by end user for booking flights and hotels for tours and travels.",
+        "company": "infosys",
+        "client": "ETA Infosys",
+        "technology": [
+          "MERN Full Stack",
+          "JSX",
+          "RESTful APIs",
+          "REST client",
+          "MongoDb"
+        ],
+        "type": "training project",
+        "role": "full stack developer",
+        "year": "2019",
+        "priority": 4
+      },
+      {
+        "name": "ESD-Student-Management-System",
+        "description": "This software is developed for trainers for storing, managing and evaluating students data and perforamance in Employability Skill Development training.",
+        "company": "Zensar Technologies Ltd.",
+        "client": "Employability Skill Development, Zensar",
+        "technology": [
+          "C#.Net",
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "MongoDB"
+        ],
+        "type": "training project",
+        "role": "UI developer",
+        "year": "2017",
+        "priority": 2
+      },
+      {
+        "name": "Prediction of Chronic Kidney Disease by using Machine Learning Algorithm.",
+        "description": "Using Machine Learning algorithms to detect disease CKD by using medical test reports.",
+        "company": "",
+        "client": "",
+        "technology": [
+          "HTML5",
+          "CSS",
+          "Python",
+          "tkinter"
+        ],
+        "type": "academic project",
+        "role": "UI developer,Python Programmer",
+        "year": "2017",
+        "priority": 2
+      }
     ],
     "professional_experience": [
-        {
-            "from": "2019-10-07T00:00:00.000Z",
-            "role": "systems engineer trainee",
-            "company": "infosys",
-            "to": "2020-02-01T00:00:00.000Z"
-        },
-        {
-            "from": "2020-03-07T00:00:00.000Z",
-            "role": "systems engineer",
-            "company": "infosys",
-            "to": "2021-10-07T00:00:00.000Z"
-        },
-        {
-            "from": "2021-10-07T00:00:00.000Z",
-            "role": "senior systems engineer",
-            "company": "infosys",
-            "to": ""
-        }
+      {
+        "from": "2019-10-07T00:00:00.000Z",
+        "role": "systems engineer trainee",
+        "company": "infosys",
+        "to": "2020-02-01T00:00:00.000Z"
+      },
+      {
+        "from": "2020-03-07T00:00:00.000Z",
+        "role": "systems engineer",
+        "company": "infosys",
+        "to": "2021-10-07T00:00:00.000Z"
+      },
+      {
+        "from": "2021-10-07T00:00:00.000Z",
+        "role": "senior systems engineer",
+        "company": "infosys",
+        "to": ""
+      }
     ],
     "academic_Synopsis": [
-        {
-            "name": "matriculation",
-            "year": "2012-03-01T00:00:00.000Z",
-            "course": "10th",
-            "stream": "",
-            "institute": "Swami Vivekananda Vidya Mandir, Padoli",
-            "university": "Maharashtra State Board",
-            "marks": "84.73%"
-        },
-        {
-            "name": "intermediate",
-            "year": "2014-02-01T00:00:00.000Z",
-            "course": "12th",
-            "stream": "science PCMB",
-            "institute": "Mahatma Basaweshwar Junior college, Latur",
-            "university": "Maharashtra State Board",
-            "marks": "63.51%"
-        },
-        {
-            "name": "graduation",
-            "year": "2019-06-01T00:00:00.000Z",
-            "course": "Bachelor of Engineering",
-            "stream": "Information Technology",
-            "institute": "Vidya Pratisthan’s Kamalnayan Bajaj Institute Engineering & Technology, Baramati",
-            "university": "Savitribai Phule Pune University, Pune",
-            "cgpa": "7.19"
-        }
+      {
+        "name": "matriculation",
+        "year": "2012-03-01T00:00:00.000Z",
+        "course": "10th",
+        "stream": "",
+        "institute": "Swami Vivekananda Vidya Mandir, Padoli",
+        "university": "Maharashtra State Board",
+        "marks": "84.73%"
+      },
+      {
+        "name": "intermediate",
+        "year": "2014-02-01T00:00:00.000Z",
+        "course": "12th",
+        "stream": "science PCMB",
+        "institute": "Mahatma Basaweshwar Junior college, Latur",
+        "university": "Maharashtra State Board",
+        "marks": "63.51%"
+      },
+      {
+        "name": "graduation",
+        "year": "2019-06-01T00:00:00.000Z",
+        "course": "Bachelor of Engineering",
+        "stream": "Information Technology",
+        "institute": "Vidya Pratisthan’s Kamalnayan Bajaj Institute Engineering & Technology, Baramati",
+        "university": "Savitribai Phule Pune University, Pune",
+        "cgpa": "7.19"
+      }
     ],
     "trainings": [
-        {
-            "name": "Fundamentals and Object-Oriented programming of Python in Infosys Mysore on October 2019.",
-            "date": "2019-10-01T00:00:00.000Z",
-            "institute": "Infosys,Mysore",
-            "priority": 5
-        },
-        {
-            "name": "Basics of SQL in Infosys Mysore on October 2019.",
-            "date": "2019-11-01T00:00:00.000Z",
-            "institute": "Infosys,Mysore",
-            "priority": 5
-        },
-        {
-            "name": "MERN full stack professional in Infosys Mysore on December 2019.",
-            "date": "2019-12-01T00:00:00.000Z",
-            "institute": "Infosys,Mysore",
-            "priority": 5
-        },
-        {
-            "name": "Angular 9, HTML 5 and CSS by lex Infosys on June 2020.",
-            "date": "2020-06-01T00:00:00.000Z",
-            "institute": "Infosys,Lex",
-            "priority": 4
-        },
-        {
-            "name": "TypeScript by lex Infosys on June 2021.",
-            "date": "2021-06-01T00:00:00.000Z",
-            "institute": "Infosys,Lex",
-            "priority": 4
-        },
-        {
-            "name": "JavaScript by lex Infosys on May 2021.",
-            "date": "2021-05-01T00:00:00.000Z",
-            "institute": "Infosys,Lex",
-            "priority": 4
-        },
-        {
-            "name": "18 days Zensar Technologies LTD. ESD (Employability Skill Development) training.",
-            "date": "2018-04-01T00:00:00.000Z",
-            "institute": "Zensar Technologies LTD.",
-            "priority": 3
-        },
-        {
-            "name": "Attended 3 days (soft skills) training program Campus to Corporate held by GradToGuru at Vidya Pratisthan’s Kamalnayan Bajaj Institute of Engineering and Technology, Baramati.",
-            "date": "2016-06-01T00:00:00.000Z",
-            "institute": "Vidya Pratisthan’s Kamalnayan Bajaj Institute of Engineering and Technology, Baramati.",
-            "priority": 1
-        },
-        {
-            "name": "Core JAVA and Advance JAVA for web application training by (Credit Systems India pvt.ltd.) CSI, Pune.",
-            "date": "2017-08-01T00:00:00.000Z",
-            "institute": "Credit Systems India pvt.ltd.",
-            "priority": 1
-        }
+      {
+        "name": "Fundamentals and Object-Oriented programming of Python in Infosys Mysore on October 2019.",
+        "date": "2019-10-01T00:00:00.000Z",
+        "institute": "Infosys,Mysore",
+        "priority": 5
+      },
+      {
+        "name": "Basics of SQL in Infosys Mysore on October 2019.",
+        "date": "2019-11-01T00:00:00.000Z",
+        "institute": "Infosys,Mysore",
+        "priority": 5
+      },
+      {
+        "name": "MERN full stack professional in Infosys Mysore on December 2019.",
+        "date": "2019-12-01T00:00:00.000Z",
+        "institute": "Infosys,Mysore",
+        "priority": 5
+      },
+      {
+        "name": "Angular 9, HTML 5 and CSS by lex Infosys on June 2020.",
+        "date": "2020-06-01T00:00:00.000Z",
+        "institute": "Infosys,Lex",
+        "priority": 4
+      },
+      {
+        "name": "TypeScript by lex Infosys on June 2021.",
+        "date": "2021-06-01T00:00:00.000Z",
+        "institute": "Infosys,Lex",
+        "priority": 4
+      },
+      {
+        "name": "JavaScript by lex Infosys on May 2021.",
+        "date": "2021-05-01T00:00:00.000Z",
+        "institute": "Infosys,Lex",
+        "priority": 4
+      },
+      {
+        "name": "18 days Zensar Technologies LTD. ESD (Employability Skill Development) training.",
+        "date": "2018-04-01T00:00:00.000Z",
+        "institute": "Zensar Technologies LTD.",
+        "priority": 3
+      },
+      {
+        "name": "Attended 3 days (soft skills) training program Campus to Corporate held by GradToGuru at Vidya Pratisthan’s Kamalnayan Bajaj Institute of Engineering and Technology, Baramati.",
+        "date": "2016-06-01T00:00:00.000Z",
+        "institute": "Vidya Pratisthan’s Kamalnayan Bajaj Institute of Engineering and Technology, Baramati.",
+        "priority": 1
+      },
+      {
+        "name": "Core JAVA and Advance JAVA for web application training by (Credit Systems India pvt.ltd.) CSI, Pune.",
+        "date": "2017-08-01T00:00:00.000Z",
+        "institute": "Credit Systems India pvt.ltd.",
+        "priority": 1
+      }
     ],
     "personal_profile": {
-        "personal_skills": [
-            "teamwork",
-            "adaptable",
-            "analytical"
-        ],
-        "hobbies/interests": [
-            "listening music",
-            "reading books",
-            "playing video games"
-        ],
-        "languages": {
-            "English": "RWS",
-            "Hindi": "RWS",
-            "Marathi": "RWS"
-        }
+      "personal_skills": [
+        "Creative",
+        "Teamwork",
+        "Adaptability",
+        "Problem Solving",
+        "Critical Thinking"
+      ],
+      "hobbies/interests": [
+        "Listening Music",
+        "Reading Books",
+        "Playing Video Games"
+      ],
+      "languages": [
+        "English",
+        "Hindi",
+        "Marathi"
+      ]
     },
     "publications/awards": [
-        {
-            "name": "Prediction of Chronic Kidney Disease Using Machine Learning Algorithm",
-            "from": "International journal of advanced research in computer and communication engineering",
-            "date": "2018-10-10T00:00:00.000Z",
-            "description": "paper published",
-            "priority": 5
-        },
-        {
-            "name": "insta award",
-            "from": "infosys",
-            "date": "2021-09-08T00:00:00.000Z",
-            "description": "good technical skill, able to complete complex work independently. actively participation during team meeting.",
-            "priority": 5
-        }
+      {
+        "name": "Prediction of Chronic Kidney Disease Using Machine Learning Algorithm",
+        "from": "International journal of advanced research in computer and communication engineering",
+        "date": "2018-10-10T00:00:00.000Z",
+        "description": "paper published",
+        "priority": 5
+      },
+      {
+        "name": "insta award",
+        "from": "infosys",
+        "date": "2021-09-08T00:00:00.000Z",
+        "description": "good technical skill, able to complete complex work independently. actively participation during team meeting.",
+        "priority": 5
+      }
     ],
     "participations/volunteering": [
-        {
-            "name": "Certificate of project presentation at Avishkar 2018 university level research competition.",
-            "date": "2019-01-02T00:00:00.000Z",
-            "description": "participated in Avishkar university level research competition at under graduate level, under Medicine and Pharmacy category held at Savitribai Phule Pune University.",
-            "event": "Avishkar 2018 university level research competition.",
-            "priority": 4
-        },
-        {
-            "name": "Co-ordinator and Anchor in ‘BUG-G’ Programming Competition in Vidya Pratisthan’s Kamalnayan Bajaj Institute Engineering & Technology, Baramati.",
-            "date": "2018-09-01T00:00:00.000Z",
-            "description": "",
-            "event": "‘BUG-G’ Programming Competition",
-            "priority": 3
-        }
+      {
+        "name": "Certificate of project presentation at Avishkar 2018 university level research competition.",
+        "date": "2019-01-02T00:00:00.000Z",
+        "description": "participated in Avishkar university level research competition at under graduate level, under Medicine and Pharmacy category held at Savitribai Phule Pune University.",
+        "event": "Avishkar 2018 university level research competition.",
+        "priority": 4
+      },
+      {
+        "name": "Co-ordinator and Anchor in ‘BUG-G’ Programming Competition in Vidya Pratisthan’s Kamalnayan Bajaj Institute Engineering & Technology, Baramati.",
+        "date": "2018-09-01T00:00:00.000Z",
+        "description": "",
+        "event": "‘BUG-G’ Programming Competition",
+        "priority": 3
+      }
     ]
-}
+  }
