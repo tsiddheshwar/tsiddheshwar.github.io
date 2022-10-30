@@ -1,6 +1,22 @@
 technical_skills
 <div *ngFor="let type of main_types">
     <ul type="none">
+        <div class="row">
+            <li *ngFor="let skill of type">
+                <div class="col-sm-1">
+                    <img src="{{skill.icon}}" alt="{{skill.name}} icon" class="img_icon">
+                    <!-- <div title="{{skill.name}}" class="card-body">
+                        <span> {{skill.name}}</span>
+                    </div> -->
+                </div>
+            </li>
+        </div>
+    </ul>
+</div>
+<hr/>
+technical_skills
+<div *ngFor="let type of main_types">
+    <ul type="none">
         <div class="card-deck">
             <li *ngFor="let skill of type">
                 <div class="card">

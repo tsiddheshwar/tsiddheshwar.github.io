@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { Html5TutorialComponent } from './html5-tutorial/html5-tutorial.component';
 
 import { LandingViewerComponent } from './landing-viewer/landing-viewer.component';
 import { MgsFanpageComponent } from './mgs-fanpage/mgs-fanpage.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
             {
                 path: 'form',
                 component: SampleFormComponent
+            },
+            {
+                path: 'html5',
+                component: Html5TutorialComponent
             }
         ]
     }

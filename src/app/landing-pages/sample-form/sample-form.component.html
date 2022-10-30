@@ -9,10 +9,13 @@
         <h4 class="card-title">Card title</h4>
         <p class="card-text">Some example text. Some example text.</p>
         <div>
-            <form action="/action_page.php" class="needs-validation" novalidate>
+            <form name="sample form" method="post" action="../sample-form/sample-form.component.ts" class="needs-validation" novalidate>
+                <div class="col-md-10">
+
+                </div>
                 <div class="form-group">
                     <label for="fname">First name:</label>
-                    <input type="text" class="form-control" id="fname" placeholder="Enter First name" name="fname"
+                    <input type="text" autofocus class="form-control" id="fname" placeholder="Enter First name" name="fname"
                         required>
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
@@ -21,6 +24,23 @@
                     <label for="lname">Last name:</label>
                     <input type="text" class="form-control" id="fname" placeholder="Enter Last name" name="lname"
                         required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <input type="date" name="dob" id="dob">
+                <input type="file" name="upload" id="upload">
+                <input type="color" name="accent" id="accent">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="" disabled selected>--Select--</option>
+                    <option value="India">India</option>
+                    <option value="Other">Other</option>
+                </select>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" class="form-control-inline" placeholder="" id="gender" name="gender" required>
+                    <input type="radio" class="form-control-inline" placeholder="" id="gender" name="gender" required>
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
@@ -46,8 +66,11 @@
                         <div class="invalid-feedback">Check this checkbox to continue.</div>
                     </label>
                 </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="btn-group">
+                    <button type="reset" class="btn btn-success">Reset</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                
             </form>
         </div>
     </div>

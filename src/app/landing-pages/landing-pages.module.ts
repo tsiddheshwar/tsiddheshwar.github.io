@@ -5,13 +5,15 @@ import { LandingViewerComponent } from './landing-viewer/landing-viewer.componen
 import { AppRoutingModule } from '../app-routing.module';
 import { SampleFormComponent } from './sample-form/sample-form.component';
 import { landingPagesRoutingModule } from './landing-pages-routing.module';
+import { Html5TutorialComponent } from './html5-tutorial/html5-tutorial.component';
 
 
 @NgModule({
   declarations: [
     MgsFanpageComponent,
     LandingViewerComponent,
-    SampleFormComponent
+    SampleFormComponent,
+    Html5TutorialComponent
   ],
   imports: [
     CommonModule,
