@@ -2,6 +2,20 @@
 @import './variables';
 @import './mixins';
 
+.right-viewer{
+    overflow: scroll;
+    box-sizing: border-box;
+    background: rgba(255, 0, 0, 0.13);
+}
+
+.left-index{
+    overflow-y: scroll;
+    border-right: 1px solid black;
+    height: 76vh;
+    box-sizing: border-box;
+    background: rgba(0, 255, 0, 0.13);
+}
+
 .p3text {
     color: rgb(56, 155, 255);
 }
@@ -10,7 +24,7 @@
     border: 4px dashed black;
     height: 80vh;
     width: 12 * $width;
-    overflow: scroll;
+    overflow: auto;
     zoom: 78%;
     margin: 10px 0 10px 0;
 }
