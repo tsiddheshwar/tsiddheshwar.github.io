@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LandingViewerComponent } from './landing-viewer/landing-viewer.component';
-import { MgsFanpageComponent } from './mgs-fanpage/mgs-fanpage.component';
 import { SampleFormComponent } from './sample-form/sample-form.component';
 
 const routes: Routes = [
@@ -12,7 +11,7 @@ const routes: Routes = [
         children: [
             {
                 path: 'mgs',
-                component: MgsFanpageComponent
+                component: LandingViewerComponent
             },
             {
                 path: 'form',
