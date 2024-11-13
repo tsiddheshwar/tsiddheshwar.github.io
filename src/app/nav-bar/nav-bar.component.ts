@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UiViewerHelperServiceService } from '../services/ui-viewer-helper-service.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,18 +8,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-  navbarItems: any = ['Skills', 'Work done', 'Tools', 'Landing Pages', 'Contact'];
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    public uiViewerHelperServiceService: UiViewerHelperServiceService
+  ) { }
 
   ngOnInit(): void {
   }
 
-  clickNav(navbarItem: any) {
-    navbarItem == "Skills" ? this.router.navigate(['/', 'skills']) :
-      navbarItem == "Work done" ? this.router.navigate(['/', 'workdone']) :
-        navbarItem == "Tools" ? this.router.navigate(['/', 'tools']) :
-          navbarItem == "Landing Pages" ? this.router.navigate(['/', 'landingpages']) :
-            navbarItem == "Contact" ? this.router.navigate(['/', 'contact']) : '';
+  clickNav(navbarItem: string) {
+    this.router.navigate(['/', navbarItem]);
   }
 
 }

@@ -27,10 +27,12 @@
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
-      <li class="navbar-item" *ngFor="let navbarItem of navbarItems" data-toggle="collapse"
-        data-target=".navbar-collapse.show" (click)="clickNav(navbarItem)">
-        <span id={{navbarItem}} class="nav-link" style="cursor:pointer">{{navbarItem}}</span>
+      @for (item of uiViewerHelperServiceService.uiSteps; track $index) {
+      <li class="navbar-item" data-toggle="collapse" data-target=".navbar-collapse.show"
+        (click)="clickNav(item['route'])">
+        <span id="item['name']" class="nav-link" style="cursor:pointer">{{item['name']}}</span>
       </li>
+      }
     </ul>
   </div>
 </nav>

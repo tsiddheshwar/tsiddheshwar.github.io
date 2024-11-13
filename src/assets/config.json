@@ -1,0 +1,29 @@
+{
+    "baseApiUrl": "http://10.129.196.107:5000",
+    "baseApiUrl2": "http://10.129.196.55:5000",
+    "routes": {
+        "initilization": "/initilization",
+        "upload": "/initilization/upload",
+        "upload_others":"/initilization/upload/others",
+        "fetch_variables": "/initilization/variables",
+        "fetch_commands": "/initilization/commands",
+        "fetch_main": "/initilization/main",
+        "generate_variables.dd": "/generation/generate_variables",
+        "generate_commands.dd": "/generation/generate_commands",
+        "generate_labels.h": "/generation/generate_labels",
+        "generate_windowmenus.dd": "/generation/generate_windows",
+        "generate_main.ddl": "/generation/generate_main",
+        "generate_enhancements.dd": "/generation/generate_enhancement",
+        "generate_macros.h": "/generation/generate_macros",
+        "generate_nonwindowmenus.dd": "/generation/generate_non_windows",
+        "generate_relations.dd": "/generation/generate_relations",
+        "chatbot": "/initilization/chatbot",
+        "progress": "/progress",
+        "end_generation": "/end_generation",
+        "suggestion": "/generation/suggestion",
+        "api_version": "/api_version",
+        "stop_extraction":"/stop_extraction",
+        "load_data":"/load_data",
+        "save_data":"/save_data"
+    }
+}
