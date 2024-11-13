@@ -1,8 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": false
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -11,9 +8,6 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": false
         }
       },
       "root": "",
@@ -23,20 +17,21 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/tsiddheshwar",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              { "glob": "**/*", "input": "node_modules/monaco-editor/min", "output": "./assets/monaco/" },
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/style.scss",
-              "src/assets/css/_variables.scss",
-              "src/assets/css/_mixins.scss"
+              "src/styles.scss",
+              "src/_variables.scss",
+              "src/_mixins.scss"
             ],
             "scripts": []
           },
@@ -104,14 +99,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/style.scss",
-              "src/assets/css/_variables.scss",
-              "src/assets/css/_mixins.scss"
+              "src/styles.scss",
+              "src/_variables.scss",
+              "src/_mixins.scss"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
