@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+
+.max_height_parent {
+    overflow: auto;
+    max-height: 100%;
+}
+
+.height_parent {
+    height: 100% !important;
+}
+
+.row-margin-fix {
+    margin-left: -1.5rem !important;
+
+    >* {
+        padding-right: 0.2rem !important;
+    }
+}
+
+* {
+    div> :not(.cursor, .selected-text, .monaco-mouse-cursor-text, .margin, .lines-content, .bot_chat_content, .has-selection) {
+        //max-height: 100%;
+        //max-width: 100%;
+    }
+
+    scrollbar-width: thin !important;
+}
+
+button {
+    margin-right: 0.5vw;
+}
+
+.scrollable {
+    overflow-y: auto !important;
+}
+
+.flex_row {
+    display: flex;
+}
+
+.flex_row_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex_row_spaceinbetween {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.flex_col_rev {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}

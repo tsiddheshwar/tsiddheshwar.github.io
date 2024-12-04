@@ -10,4 +10,11 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'tsiddheshwar.github.io';
+  version: string = '';
+  
+  ngOnInit() {
+    const packageJson = require('../../package.json');
+    this.version = packageJson.version;
+    console.log("%cUI version %s", "color: tomato", `v${this.version}`);
+  }
 }
