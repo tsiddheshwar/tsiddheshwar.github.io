@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { UiViewerComponent } from '../components/ui-viewer/ui-viewer.component'; // Import UiViewerComponent
+import { RouterModule } from '@angular/router';
+import { UiViewerComponent } from '../components/ui-viewer/ui-viewer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, UiViewerComponent], // Add UiViewerComponent to imports
+  imports: [RouterModule, UiViewerComponent], // Import RouterModule here
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'] // Fixed typo: changed styleUrl to styleUrls
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'tsiddheshwar.github.io';
   version: string = '';
-  
+
   ngOnInit() {
     const packageJson = require('../../package.json');
     this.version = packageJson.version;

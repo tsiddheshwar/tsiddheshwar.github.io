@@ -17,3 +17,13 @@
     height: 1.5rem;
     background-color: #0392a5;
 }
+
+.nav-link.active {
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    pointer-events: auto;
+    cursor: pointer;
+}
