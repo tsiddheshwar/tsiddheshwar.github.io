@@ -1,14 +1,37 @@
-<h1>angular app initilized.....</h1>
-
-<footer class="footer">
-    <div class="container-fluid">
-        <div class="flex_row_spaceinbetween">
-            <div class="col-9 text-light">
-                © 2025 Copyright:tsiddheshwar
+<div class="page-container">
+    <!-- 2nd Div: Remaining Space -->
+    <div class="content-area">
+        <header>
+            <div class="navbar_main_div">
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/ST_icon.png" alt="brand" style="width:40px;">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/landing" routerLinkActive="active">Landing Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="col-1 text-light" style="text-align: right;">
+        </header>
+        <app-ui-viewer></app-ui-viewer>
+    </div>
+    <!-- 1st Div: Bottom Navbar -->
+    <footer class="footer">
+        <div class="flex_row_spaceinbetween">
+            <div class="text-light">
+                © 2025 Copyright: tsiddheshwar
+            </div>
+            <div class="text-light" style="text-align: right;">
                 <span>v{{version}}</span>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</div>

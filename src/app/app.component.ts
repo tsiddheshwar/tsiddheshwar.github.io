@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { UiViewerComponent } from '../components/ui-viewer/ui-viewer.component'; // Import UiViewerComponent
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, UiViewerComponent], // Add UiViewerComponent to imports
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'] // Fixed typo: changed styleUrl to styleUrls
 })
 export class AppComponent {
   title = 'tsiddheshwar.github.io';
