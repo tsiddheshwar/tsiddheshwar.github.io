@@ -1,0 +1,31 @@
+.navbar {
+  position: relative;
+}
+
+.app-title {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.user-details-popout {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.user-details-popout p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.user-details-popout button {
+  margin-top: 10px;
+}

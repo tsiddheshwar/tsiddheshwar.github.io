@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark padding_y_0">
+    <!-- Brand Logo and Name -->
+    <a class="navbar-brand clickable" routerLink="/">
+        <img src="../assets/ST_icon.png" alt="brand" style="width:40px;">
+        <span class="app-title">{{ appTitle }}</span>
+    </a>
+
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link clickable" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link clickable" routerLink="/landing" routerLinkActive="active">Landing Pages</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link clickable" routerLink="/contact" routerLinkActive="active">Contact</a>
+        </li>
+    </ul>
+    <!-- Spacer to push the button to the right -->
+    <div class="flex-grow-1"></div>
+
+    <!-- User Details Button -->
+    <button class="btn btn-outline-light" (click)="toggleUserDetails()">User Details</button>
+
+    <!-- Popout for User Details -->
+    @if (showUserDetails) {
+    <div class="user-details-popout">
+        <p><strong>Name:</strong> {{ userDetails.name }}</p>
+        <p><strong>Email:</strong> {{ userDetails.email }}</p>
+        <button class="btn btn-sm btn-danger" (click)="toggleUserDetails()">Close</button>
+    </div>
+    }
+</nav>

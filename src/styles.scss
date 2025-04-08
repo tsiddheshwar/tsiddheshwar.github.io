@@ -57,3 +57,16 @@ button {
     display: flex;
     flex-direction: column;
 }
+
+.clickable {
+    cursor: pointer;
+}
+
+.padding_x_0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.padding_y_0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
