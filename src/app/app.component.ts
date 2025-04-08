@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 export class AppComponent {
   title = 'tsiddheshwar.github.io';
   version: string = '';
+  currentYear: number = new Date().getFullYear(); 
 
   ngOnInit() {
     const packageJson = require('../../package.json');

@@ -1,0 +1,114 @@
+.comp-container {
+    height: 100%;
+    max-height: 100%;
+}
+
+.bot_parent {
+    height: 100%;
+}
+
+.bot_box {
+    min-width: 100%;
+    height: calc(100% - 1.35rem);
+}
+   
+.chatbot_msg_container {
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 0;
+}
+
+.bot_chat_content {
+    width: 100%;
+    * {
+        font-size: small;
+    }
+}
+
+.card_header_height {
+    height: 3.25rem;;
+}
+
+.card_body_height {
+    max-height: calc(100% - 4.25rem);
+    height: 34.5rem;
+}
+
+pre {
+    margin-bottom: 0px !important;
+}
+
+.fetchedData {
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+#message_div {
+    max-height: 10vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.user {
+    background: #f6faff;
+    align-items: self-end;
+}
+
+.bot {
+    background: #f8f8f8;
+    align-items: self-start;
+}
+
+.user-side {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.bot-side {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
+.tree_a {
+    background-color: rgb(235, 235, 235);
+    margin-left: 5%;
+    padding-left: 5px;
+    margin-bottom:2.5%;
+    margin-right: 2.5%;
+}
+
+.tree_b {
+    background-color: rgb(240, 240, 240);
+    margin-left: 5%;
+    padding-left: 5px;
+    margin-bottom:2.5%;
+    margin-right: 2.5%;
+}
+
+.tree_c {
+    background-color: rgb(245, 245, 245);
+    margin-left: 5%;
+    padding-left: 5px;
+    margin-bottom:2.5%;
+    margin-right: 2.5%;
+}
+
+.tree_d {
+    background-color: rgb(250, 250, 250);
+    margin-left: 5%;
+    padding-left: 5px;
+    margin-bottom:2.5%;
+    margin-right: 2.5%;
+}
+
+.tree_e {
+    background-color: rgb(255, 255, 255);
+    margin-left: 5%;
+    padding-left: 5px;
+    margin-bottom:2.5%;
+    margin-right: 2.5%;
+}
