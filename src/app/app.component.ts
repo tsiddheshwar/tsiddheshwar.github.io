@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { UiViewerComponent } from '../components/ui-viewer/ui-viewer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +13,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 })
 export class AppComponent {
   title = 'tsiddheshwar.github.io';
-  version: string = '';
+  version = '0.0.16';
   currentYear: number = new Date().getFullYear(); 
 
-  ngOnInit() {
-    const packageJson = require('../../package.json');
-    this.version = packageJson.version;
-    console.log("%cUI version %s", "color: tomato", `v${this.version}`);
-  }
+  constructor(private themeService: ThemeService) {}
 }

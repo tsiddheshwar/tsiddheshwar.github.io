@@ -1,0 +1,30 @@
+<section class="services-section section section-alt" id="services">
+    <div class="container">
+        <app-section-header
+            [center]="true"
+            eyebrow="What I do"
+            subtitle="Bringing ideas to life across the full stack — from API design and data modelling to polished, accessible interfaces.">
+            Services I <span class="text-gradient">offer</span>
+        </app-section-header>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3" *ngFor="let svc of services">
+                <article class="service-card">
+                    <div class="svc-icon" aria-hidden="true">
+                        <ng-container [ngSwitch]="svc.icon">
+                            <svg *ngSwitchCase="'code'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <svg *ngSwitchCase="'server'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                            <svg *ngSwitchCase="'palette'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+                            <svg *ngSwitchCase="'shield'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        </ng-container>
+                    </div>
+                    <h3 class="svc-title">{{ svc.title }}</h3>
+                    <p class="svc-desc">{{ svc.description }}</p>
+                    <ul class="svc-bullets">
+                        <li *ngFor="let b of svc.bullets">{{ b }}</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,63 @@
+<section class="projects-section section section-alt" id="projects">
+    <div class="container">
+        <app-section-header
+            [center]="true"
+            eyebrow="Featured work"
+            subtitle="A selection of products and side-projects I've designed, built, and shipped.">
+            Recent <span class="text-gradient">projects</span>
+        </app-section-header>
+
+        <div class="filter-bar" role="tablist">
+            <button
+                *ngFor="let tag of tags"
+                class="filter-chip"
+                [class.active]="active() === tag"
+                (click)="select(tag)"
+                type="button"
+                role="tab"
+                [attr.aria-selected]="active() === tag">
+                {{ tag }}
+            </button>
+        </div>
+
+        <div class="row g-4 mt-1">
+            <div class="col-md-6 col-lg-4" *ngFor="let project of visibleProjects()">
+                <article class="project-card" [class.featured]="project.featured">
+                    <div class="project-cover">
+                        <div class="project-cover-content">
+                            <span class="project-tag">{{ project.tag }}</span>
+                            <span *ngIf="project.featured" class="project-star">★ Featured</span>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <header class="project-head">
+                            <h3 class="project-name">{{ project.name }}</h3>
+                            <span class="project-period" *ngIf="project.period">{{ project.period }}</span>
+                        </header>
+
+                        <p class="project-summary">{{ project.summary }}</p>
+                        <p class="project-description">{{ project.description }}</p>
+
+                        <ul class="project-highlights">
+                            <li *ngFor="let h of project.highlights">{{ h }}</li>
+                        </ul>
+
+                        <div class="project-stack">
+                            <span class="chip" *ngFor="let tech of project.stack">{{ tech }}</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a *ngIf="project.liveUrl" [href]="project.liveUrl" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                                Live demo ↗
+                            </a>
+                            <a *ngIf="project.repoUrl" [href]="project.repoUrl" target="_blank" rel="noopener" class="btn btn-sm btn-outline-secondary">
+                                Source ↗
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

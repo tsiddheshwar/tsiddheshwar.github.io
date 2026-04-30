@@ -1,0 +1,98 @@
+<section class="contact-page">
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-lg-5">
+                <h1 class="contact-title">Get in touch</h1>
+                <p class="contact-lead">
+                    Have a role, project, or collaboration in mind? Drop a note and I'll get back to you.
+                </p>
+
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-label">Email</span>
+                        <a [href]="'mailto:' + profile.email">{{ profile.email }}</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">Location</span>
+                        <span>{{ profile.location }}</span>
+                    </li>
+                    <li>
+                        <span class="contact-label">LinkedIn</span>
+                        <a [href]="profile.linkedin" target="_blank" rel="noopener">tsiddheshwar</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">GitHub</span>
+                        <a [href]="profile.github" target="_blank" rel="noopener">@tsiddheshwar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-7">
+                <form class="contact-form" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Name</label>
+                            <input
+                                id="name"
+                                type="text"
+                                class="form-control"
+                                formControlName="name"
+                                [class.is-invalid]="f.name.touched && f.name.invalid"
+                                autocomplete="name"
+                            />
+                            <div class="invalid-feedback" *ngIf="f.name.touched && f.name.invalid">
+                                Please enter your name.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input
+                                id="email"
+                                type="email"
+                                class="form-control"
+                                formControlName="email"
+                                [class.is-invalid]="f.email.touched && f.email.invalid"
+                                autocomplete="email"
+                            />
+                            <div class="invalid-feedback" *ngIf="f.email.touched && f.email.invalid">
+                                Enter a valid email.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input
+                                id="subject"
+                                type="text"
+                                class="form-control"
+                                formControlName="subject"
+                                [class.is-invalid]="f.subject.touched && f.subject.invalid"
+                            />
+                            <div class="invalid-feedback" *ngIf="f.subject.touched && f.subject.invalid">
+                                Subject is required.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea
+                                id="message"
+                                rows="6"
+                                class="form-control"
+                                formControlName="message"
+                                [class.is-invalid]="f.message.touched && f.message.invalid"
+                            ></textarea>
+                            <div class="invalid-feedback" *ngIf="f.message.touched && f.message.invalid">
+                                Please write a message of at least 10 characters.
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex gap-2">
+                            <button type="submit" class="btn btn-primary">Send via email</button>
+                            <a [href]="'mailto:' + profile.email" class="btn btn-outline-secondary">
+                                Open mail client
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

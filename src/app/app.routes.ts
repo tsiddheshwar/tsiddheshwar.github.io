@@ -1,13 +1,15 @@
 import { Routes } from '@angular/router';
+import { ContactComponent } from '../components/contact/contact.component';
 import { NotFoundComponent } from '../components/not-found/not-found.component';
-import { PortfolioViewerComponent } from '../components/portfolio-viewer/portfolio-viewer.component'; // Import PortfolioViewerComponent
+import { PortfolioViewerComponent } from '../components/portfolio-viewer/portfolio-viewer.component';
 import { ChatSampleComponent } from './components/chat-sample/chat-sample.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect root to /home
-    { path: 'home', component: PortfolioViewerComponent },
-    { path: 'landing', component: PortfolioViewerComponent },
-    { path: 'contact', component: PortfolioViewerComponent },
-    {path: 'chat', component: ChatSampleComponent },
-    { path: '**', component: NotFoundComponent } // Wildcard route for 404
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'home', component: PortfolioViewerComponent, title: 'Siddheshwar Thakare · Full-Stack Engineer' },
+    { path: 'landing', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'projects', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'contact', component: ContactComponent, title: 'Contact · Siddheshwar Thakare' },
+    { path: 'chat', component: ChatSampleComponent, title: 'Chat sample' },
+    { path: '**', component: NotFoundComponent, title: 'Not found' },
 ];

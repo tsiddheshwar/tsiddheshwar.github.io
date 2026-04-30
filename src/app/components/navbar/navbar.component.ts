@@ -1,22 +1,21 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { ThemeService, ThemeMode } from '../../services/theme.service';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule], // Import RouterModule here
+  imports: [RouterModule, CommonModule],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'] // Fixed typo: styleUrl -> styleUrls
 })
 export class NavbarComponent {
-  appTitle = 'My Application'; // Replace with your app title
-  userDetails = {
-    name: 'John Doe',
-    email: 'john.doe@example.com'
-  };
-  showUserDetails = false;
+  appTitle = 'Siddheshwar Thakare';
 
-  toggleUserDetails() {
-    this.showUserDetails = !this.showUserDetails;
+  constructor(public themeService: ThemeService) {}
+
+  setTheme(mode: ThemeMode) {
+    this.themeService.setMode(mode);
   }
 }

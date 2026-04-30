@@ -1,31 +1,69 @@
-.navbar {
-  position: relative;
+.app-navbar {
+  background-color: var(--nav-bg);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--nav-border);
+  box-shadow: var(--nav-shadow);
+  min-height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
 }
 
-.app-title {
-  margin-left: 10px;
-  font-size: 1.2rem;
-  font-weight: bold;
+.brand-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 2px var(--accent), 0 0 12px rgba(99, 102, 241, .35);
 }
 
-.user-details-popout {
-  position: absolute;
-  top: 50px;
-  right: 10px;
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+.brand-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--nav-text);
+  letter-spacing: -0.01em;
 }
 
-.user-details-popout p {
-  margin: 0;
-  padding: 5px 0;
+.nav-link {
+  color: var(--nav-text-muted) !important;
+  font-weight: 500;
+  transition: color 0.15s;
+
+  &:hover, &.active {
+    color: var(--nav-text) !important;
+  }
+
+  &.active {
+    font-weight: 700;
+  }
 }
 
-.user-details-popout button {
-  margin-top: 10px;
+.theme-switcher {
+  background: var(--theme-switcher-bg);
+  border-radius: 20px;
+  padding: 3px 6px;
+  border: 1px solid var(--theme-switcher-border);
+}
+
+.theme-btn {
+  background: transparent;
+  border: none;
+  border-radius: 14px;
+  padding: 3px 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.4;
+  transition: background 0.15s;
+  opacity: 0.55;
+
+  &:hover {
+    opacity: 0.85;
+    background: var(--theme-btn-hover);
+  }
+
+  &.active {
+    background: var(--theme-btn-active);
+    opacity: 1;
+  }
 }

@@ -1,0 +1,58 @@
+<section class="experience-section section" id="experience">
+    <div class="container">
+        <app-section-header
+            [center]="true"
+            eyebrow="Career"
+            subtitle="Where I've worked, what I've shipped, and what I learned along the way.">
+            Experience & <span class="text-gradient">education</span>
+        </app-section-header>
+
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <h3 class="block-title">Work experience</h3>
+                <ol class="timeline">
+                    <li class="timeline-item" *ngFor="let job of experience">
+                        <div class="timeline-marker">
+                            <span class="marker-dot"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <header class="timeline-head">
+                                <div>
+                                    <h4 class="timeline-role">{{ job.role }}</h4>
+                                    <span class="timeline-company">{{ job.company }}</span>
+                                </div>
+                                <span class="timeline-period">
+                                    {{ job.period }}
+                                    <ng-container *ngIf="job.location"> · {{ job.location }}</ng-container>
+                                </span>
+                            </header>
+                            <ul class="timeline-achievements">
+                                <li *ngFor="let a of job.achievements">{{ a }}</li>
+                            </ul>
+                            <div class="stack-row">
+                                <span class="chip" *ngFor="let tech of job.stack">{{ tech }}</span>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="col-lg-5">
+                <h3 class="block-title">Education</h3>
+                <div class="edu-card" *ngFor="let edu of education">
+                    <div class="edu-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <div class="edu-body">
+                        <h4 class="edu-degree">{{ edu.degree }}</h4>
+                        <div class="edu-school">{{ edu.institution }}</div>
+                        <div class="edu-meta">
+                            <span>{{ edu.period }}</span>
+                            <span *ngIf="edu.score">· {{ edu.score }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

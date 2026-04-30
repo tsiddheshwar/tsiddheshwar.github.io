@@ -1,0 +1,225 @@
+:host { display: block; }
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 0 6rem;
+    background: var(--bg-body);
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    .blob { display: none; }
+    .grid {
+        position: absolute;
+        inset: 0;
+        background-image:
+            linear-gradient(var(--border-color) 1px, transparent 1px),
+            linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+        background-size: 36px 36px;
+        opacity: 0.20;
+        mask-image: radial-gradient(ellipse at center, black 35%, transparent 75%);
+        -webkit-mask-image: radial-gradient(ellipse at center, black 35%, transparent 75%);
+    }
+}
+
+.hero-row { position: relative; z-index: 1; }
+
+.hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 0.35rem 0.85rem;
+    margin-bottom: 1.25rem;
+
+    .dot {
+        width: 8px; height: 8px;
+        border-radius: 50%;
+        background: #22c55e;
+        box-shadow: 0 0 0 4px rgba(34, 197, 94, .18);
+        animation: pulse 1.6s ease-in-out infinite;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.hero-name {
+    font-size: clamp(2.25rem, 6vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.hero-role {
+    font-size: clamp(1.15rem, 2.5vw, 1.75rem);
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.typewriter {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.caret {
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    margin-left: 2px;
+    background: currentColor;
+    vertical-align: -2px;
+    animation: blink 1s steps(2) infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.hero-tagline {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    max-width: 560px;
+    line-height: 1.65;
+    margin-bottom: 2rem;
+}
+
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+}
+
+.hero-socials {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.social-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--bg-surface);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    transition: transform 0.15s ease, color 0.15s, border-color 0.15s, box-shadow 0.15s;
+
+    &:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(var(--accent-rgb), 0.18);
+    }
+}
+
+// ─── Code card ─────────────────────────────────────────────────────────────
+.hero-card {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+
+    &:hover { transform: rotate(0); }
+}
+
+.hero-card-head {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 0.9rem;
+    background: var(--bg-surface-2);
+    border-bottom: 1px solid var(--border-color);
+
+    .dot {
+        width: 11px; height: 11px;
+        border-radius: 50%;
+        background: var(--text-muted);
+    }
+    .dot.red    { background: #ff5f57; }
+    .dot.yellow { background: #ffbd2e; }
+    .dot.green  { background: #28c93f; }
+
+    .hero-card-title {
+        margin-left: auto;
+        font-size: 0.78rem;
+        color: var(--text-muted);
+    }
+}
+
+.hero-card-body {
+    margin: 0;
+    padding: 1.1rem 1.25rem;
+    background: var(--bg-surface);
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    white-space: pre;
+    overflow-x: auto;
+
+    .key   { color: var(--accent); }
+    .str   { color: #16a34a; }
+    .bool  { color: var(--accent-2); }
+    .punct { color: var(--text-muted); }
+}
+
+[data-theme="dark"] .hero-card-body .str { color: #4ade80; }
+
+// ─── Scroll indicator ──────────────────────────────────────────────────────
+.scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    width: max-content;
+    margin: 4rem auto 0;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover { color: var(--accent); }
+}
+
+.mouse {
+    width: 22px; height: 36px;
+    border: 2px solid currentColor;
+    border-radius: 12px;
+    position: relative;
+}
+.wheel {
+    position: absolute;
+    top: 6px; left: 50%;
+    transform: translateX(-50%);
+    width: 3px; height: 8px;
+    background: currentColor;
+    border-radius: 2px;
+    animation: wheel 1.6s ease-in-out infinite;
+}
+
+@keyframes wheel {
+    0% { opacity: 0; transform: translate(-50%, 0); }
+    50% { opacity: 1; transform: translate(-50%, 6px); }
+    100% { opacity: 0; transform: translate(-50%, 12px); }
+}

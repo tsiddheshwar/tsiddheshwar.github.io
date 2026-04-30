@@ -1,0 +1,41 @@
+<section class="skills-section section" id="skills">
+    <div class="container">
+        <app-section-header
+            [center]="true"
+            eyebrow="Tech stack"
+            subtitle="A snapshot of the tools I reach for, grouped by where they sit in the stack.">
+            Skills & <span class="text-gradient">tools</span>
+        </app-section-header>
+
+        <div class="filter-bar" role="tablist">
+            <button
+                *ngFor="let cat of categories"
+                class="filter-chip"
+                [class.active]="active() === cat"
+                (click)="select(cat)"
+                type="button"
+                role="tab"
+                [attr.aria-selected]="active() === cat">
+                {{ cat }}
+            </button>
+        </div>
+
+        <div class="row g-3 mt-1">
+            <div class="col-md-6 col-lg-4" *ngFor="let skill of skills()">
+                <div class="skill-card">
+                    <div class="skill-head">
+                        <span class="skill-name">{{ skill.name }}</span>
+                        <span class="skill-percent">{{ skill.level }}%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" [style.width.%]="skill.level"></div>
+                    </div>
+                    <div class="skill-meta">
+                        <span class="skill-cat">{{ skill.category }}</span>
+                        <span *ngIf="skill.years">· {{ skill.years }}y experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

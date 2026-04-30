@@ -1,5 +1,192 @@
 /* You can add global styles to this file, and also import other style files */
 
+// ─── Theme tokens ────────────────────────────────────────────────────────────
+:root,
+[data-theme="light"] {
+    --bg-body:              #f5f7fa;
+    --bg-surface:          #ffffff;
+    --bg-surface-2:        #f0f2f5;
+    --text-primary:        #1a1d23;
+    --text-secondary:      #4a5568;
+    --text-muted:          #718096;
+    --border-color:        #e2e8f0;
+    --shadow-sm:           0 1px 3px rgba(0,0,0,.08);
+    --shadow-md:           0 4px 12px rgba(0,0,0,.10);
+    --shadow-lg:           0 12px 32px rgba(15, 23, 42, 0.12);
+
+    // Brand / accent (single neutral blue — no gradient, no purple/pink)
+    --accent:              #2563eb;
+    --accent-2:            #1d4ed8;
+    --accent-3:            #2563eb;
+    --accent-rgb:          37, 99, 235;
+    --gradient-brand:      var(--accent);
+    --gradient-soft:       rgba(37, 99, 235, 0.08);
+
+    // Navbar
+    --nav-bg:              rgba(255,255,255,.85);
+    --nav-border:          rgba(15, 23, 42, .08);
+    --nav-shadow:          0 4px 20px rgba(15, 23, 42, .06);
+    --nav-text:            #1a1d23;
+    --nav-text-muted:      rgba(26,29,35,.7);
+
+    // Footer
+    --footer-bg:           #1a1d23;
+    --footer-text:         rgba(255,255,255,.8);
+
+    // Theme switcher
+    --theme-switcher-bg:   rgba(15,23,42,.06);
+    --theme-switcher-border: rgba(15,23,42,.10);
+    --theme-btn-hover:     rgba(15,23,42,.08);
+    --theme-btn-active:    rgba(37, 99, 235, 0.15);
+}
+
+[data-theme="dark"] {
+    --bg-body:             #0d1117;
+    --bg-surface:         #161b22;
+    --bg-surface-2:       #1c2128;
+    --text-primary:       #e6edf3;
+    --text-secondary:     #b1bac4;
+    --text-muted:         #7d8590;
+    --border-color:       #30363d;
+    --shadow-sm:          0 1px 3px rgba(0,0,0,.3);
+    --shadow-md:          0 4px 12px rgba(0,0,0,.5);
+    --shadow-lg:          0 16px 40px rgba(0,0,0,.55);
+
+    // Brand / accent (single neutral blue, slightly brighter on dark)
+    --accent:             #3b82f6;
+    --accent-2:           #60a5fa;
+    --accent-3:           #3b82f6;
+    --accent-rgb:         59, 130, 246;
+    --gradient-brand:     var(--accent);
+    --gradient-soft:      rgba(59, 130, 246, 0.10);
+
+    // Navbar
+    --nav-bg:             rgba(13,17,23,.85);
+    --nav-border:         rgba(230,237,243,.08);
+    --nav-shadow:         0 2px 8px rgba(0,0,0,.5);
+    --nav-text:           #e6edf3;
+    --nav-text-muted:     rgba(230,237,243,.7);
+
+    // Footer
+    --footer-bg:          #010409;
+    --footer-text:        rgba(230,237,243,.7);
+
+    // Theme switcher
+    --theme-switcher-bg:  rgba(255,255,255,.06);
+    --theme-switcher-border: rgba(255,255,255,.10);
+    --theme-btn-hover:    rgba(255,255,255,.10);
+    --theme-btn-active:   rgba(59, 130, 246, 0.22);
+}
+
+// ─── Global layout & typography ─────────────────────────────────────────────
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.01em;
+}
+
+code, pre, .mono {
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+}
+
+::selection {
+    background: var(--accent);
+    color: #fff;
+}
+
+// Section anchor offset so #ids don't get hidden under any sticky bar
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+// Reusable utilities
+.text-gradient {
+    color: var(--accent);
+}
+
+.section-eyebrow {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.glass {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+// Fade-in on scroll (set by IntersectionObserver, JS adds `.is-visible`)
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+
+    &.is-visible {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
+
+// Bootstrap accent overrides (use brand colour for buttons/links)
+.btn-primary {
+    --bs-btn-bg: var(--accent);
+    --bs-btn-border-color: var(--accent);
+    --bs-btn-hover-bg: var(--accent-2);
+    --bs-btn-hover-border-color: var(--accent-2);
+    --bs-btn-active-bg: var(--accent-2);
+    --bs-btn-active-border-color: var(--accent-2);
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: var(--text-secondary);
+    --bs-btn-border-color: var(--border-color);
+    --bs-btn-hover-bg: var(--bg-surface-2);
+    --bs-btn-hover-color: var(--text-primary);
+    --bs-btn-hover-border-color: var(--border-color);
+}
+
+.btn-link {
+    --bs-btn-color: var(--accent);
+    --bs-btn-hover-color: var(--accent-2);
+    text-decoration: none;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+a:hover { color: var(--accent-2); }
+
 .max_height_parent {
     overflow: auto;
     max-height: 100%;

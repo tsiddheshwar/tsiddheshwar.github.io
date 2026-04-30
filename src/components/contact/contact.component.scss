@@ -1,0 +1,84 @@
+:host {
+    display: block;
+    color: var(--text-primary);
+}
+
+.contact-page {
+    position: relative;
+    overflow: hidden;
+    min-height: calc(100vh - 60px - 120px);
+    background: var(--bg-body);
+}
+
+.contact-title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.contact-lead {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        padding: 0.6rem 0;
+        border-bottom: 1px dashed var(--border-color);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            color: var(--bs-primary, #0d6efd);
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.contact-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+}
+
+.contact-form {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.form-label {
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.form-control {
+    background-color: var(--bg-body);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+
+    &:focus {
+        background-color: var(--bg-body);
+        color: var(--text-primary);
+        border-color: var(--bs-primary, #0d6efd);
+        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+    }
+}

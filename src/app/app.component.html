@@ -4,12 +4,21 @@
         <app-ui-viewer></app-ui-viewer>
     </div>
     <footer class="footer">
-        <div class="flex_row_spaceinbetween">
-            <div class="text-light">
-                © {{ currentYear }} Copyright: tsiddheshwar
-            </div>
-            <div class="text-light" style="text-align: right;">
-                <span>v{{version}}</span>
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-brand">
+                    <span class="footer-name">Siddheshwar Thakare</span>
+                    <span class="footer-tag">Full-Stack Software Engineer</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/tsiddheshwar" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/tsiddheshwar" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:tsiddheshwar@gmail.com">Email</a>
+                </div>
+                <div class="footer-meta">
+                    <span>© {{ currentYear }} tsiddheshwar</span>
+                    <span class="footer-version">v{{ version }}</span>
+                </div>
             </div>
         </div>
     </footer>

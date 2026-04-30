@@ -1,0 +1,34 @@
+<section class="cert-section section section-alt" id="certifications">
+    <div class="container">
+        <app-section-header
+            [center]="true"
+            eyebrow="Continuous learning"
+            subtitle="Certifications and courses I've completed to stay sharp.">
+            Certifications
+        </app-section-header>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" *ngFor="let cert of certs">
+                <div class="cert-card">
+                    <div class="cert-icon" aria-hidden="true">
+                        <ng-container [ngSwitch]="cert.icon">
+                            <svg *ngSwitchCase="'cloud'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9h-1.8a7 7 0 1 0-13.7 2"/><path d="M22 19H10"/></svg>
+                            <svg *ngSwitchCase="'badge'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/></svg>
+                            <svg *ngSwitchDefault viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </ng-container>
+                    </div>
+                    <div class="cert-body">
+                        <h3 class="cert-title">{{ cert.name }}</h3>
+                        <div class="cert-meta">
+                            <span class="cert-issuer">{{ cert.issuer }}</span>
+                            <span class="cert-year">{{ cert.year }}</span>
+                        </div>
+                    </div>
+                    <a *ngIf="cert.url" [href]="cert.url" target="_blank" rel="noopener" class="cert-link" aria-label="Open certificate">
+                        ↗
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

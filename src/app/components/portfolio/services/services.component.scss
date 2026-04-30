@@ -1,0 +1,82 @@
+:host { display: block; }
+.section { padding: 6rem 0; }
+.section-alt { background-color: var(--bg-surface-2); }
+
+.service-card {
+    height: 100%;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 3px;
+        background: var(--gradient-brand);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: var(--accent);
+        box-shadow: var(--shadow-md);
+        &::before { opacity: 1; }
+    }
+}
+
+.svc-icon {
+    width: 48px; height: 48px;
+    border-radius: 12px;
+    background: var(--gradient-soft);
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    svg { width: 24px; height: 24px; }
+}
+
+.svc-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.svc-desc {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.svc-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        position: relative;
+        padding-left: 1.25rem;
+        color: var(--text-secondary);
+        font-size: 0.88rem;
+        margin-bottom: 0.3rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0.55rem;
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+    }
+}

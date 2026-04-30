@@ -1,0 +1,49 @@
+<section class="about-section section" id="about">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+                <div class="avatar-wrap">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar">
+                        <img *ngIf="profile.avatarUrl; else initials"
+                             [src]="profile.avatarUrl"
+                             [alt]="profile.name">
+                        <ng-template #initials>
+                            <span class="avatar-initials">{{ profile.initials }}</span>
+                        </ng-template>
+                    </div>
+                    <div class="avatar-badge">
+                        <span class="badge-dot"></span> Open to work
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <app-section-header eyebrow="About me" subtitle="Engineer who cares about both code quality and user experience.">
+                    Building <span class="text-gradient">delightful</span> products end-to-end
+                </app-section-header>
+
+                <p class="about-summary">{{ profile.summary }}</p>
+
+                <ul class="highlight-grid">
+                    <li *ngFor="let h of highlights">
+                        <span class="hg-label">{{ h.label }}</span>
+                        <a *ngIf="h.href; else plain" [href]="h.href" class="hg-value">{{ h.value }}</a>
+                        <ng-template #plain>
+                            <span class="hg-value">{{ h.value }}</span>
+                        </ng-template>
+                    </li>
+                </ul>
+
+                <div class="about-cta">
+                    <a [href]="profile.resumeUrl" target="_blank" rel="noopener" class="btn btn-primary">
+                        Download résumé
+                    </a>
+                    <a [href]="profile.linkedin" target="_blank" rel="noopener" class="btn btn-outline-secondary">
+                        LinkedIn ↗
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
