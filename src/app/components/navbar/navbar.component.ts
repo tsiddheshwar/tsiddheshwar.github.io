@@ -11,7 +11,7 @@ import { ThemeService, ThemeMode } from '../../services/theme.service';
   styleUrls: ['./navbar.component.scss'] // Fixed typo: styleUrl -> styleUrls
 })
 export class NavbarComponent {
-  appTitle = 'Siddheshwar Thakare';
+  appTitle = 'Siddheshwar Tekale';
 
   constructor(public themeService: ThemeService) {}
 
