@@ -297,6 +297,30 @@ export class PortfolioService {
             period: '2025 – Present',
         },
         {
+            name: 'RaliDesigners – Agency Portfolio & Services Platform',
+            summary:
+                'Modern Angular 19 SSR-powered portfolio and services platform showcasing design agency capabilities.',
+            description:
+                'Modern Angular 19 SSR-powered portfolio and services platform showcasing design agency capabilities with dynamic portfolio showcase, service offerings, testimonials, and integrated service request management. ' +
+                'Built with Angular 19 standalone components and server-side rendering for optimal SEO and performance. Features a comprehensive agency website with modular architecture including hero section, services showcase, ' +
+                'portfolio filtering, client testimonials, blog section, and client inquiry management system. Leverages modern Angular patterns including signal-based reactivity and progressive hydration for seamless user experience.',
+            stack: ['Angular 19', 'TypeScript', 'SSR', 'SCSS', 'Responsive Design', 'ClientHydration'],
+            role: 'Designer & Developer',
+            tag: 'Full-stack',
+            featured: true,
+            highlights: [
+                'Full-stack SSR with Angular 19 for optimal SEO and performance',
+                'Modular component architecture with reusable patterns',
+                'Dynamic portfolio and services showcase with filtering',
+                'Client testimonials and case studies integration',
+                'Blog content management system',
+                'Service request form with inquiry management',
+                'ClientHydration with event replay for interactive components',
+                'Responsive design with SCSS preprocessing',
+            ],
+            period: '2025 – Present',
+        },
+        {
             name: 'first-style',
             summary:
                 'Framework-agnostic HTML5 styling library — published on npm.',
