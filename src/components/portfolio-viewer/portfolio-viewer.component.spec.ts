@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 
 import { PortfolioViewerComponent } from './portfolio-viewer.component';
 
@@ -8,7 +9,8 @@ describe('PortfolioViewerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PortfolioViewerComponent]
+      imports: [PortfolioViewerComponent],
+      providers: [provideRouter([])],
     })
     .compileComponents();
 
